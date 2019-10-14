@@ -65,6 +65,22 @@
             padding-bottom:3em;
          }
 
+.tw-new-public-navigation.navbar--inverse .navbar-nav>li>a, .tw-new-public-navigation.navbar--inverse .navbar-nav>li>button.dropdown-toggle {
+   color:#fff;
+}
+.tw-new-public-navigation .tw-public-navigation-menu__sidebar.navbar-collapse-panel {
+   background-color: #ffffff;
+}
+.tw-new-public-navigation .tw-public-navigation-menu__menu-toggle {
+   color: #284c9a;
+}
+@media all and (max-width:767px) {
+   .tw-new-public-navigation .tw-public-navigation-menu.navbar-collapse .tw-public-navigation-menu__header,
+   .tw-new-public-navigation .tw-public-navigation-menu.navbar-collapse .navbar-nav>li {
+      border-bottom: 1px solid #efefef;
+   }
+}
+
       </style>
    </head>
    <body>
@@ -72,46 +88,57 @@
 
 
 
-      <header class="navbar navbar--inverse navbar-static-top  tw-new-public-navigation navbar navbar-inverse navbar-static-top bg-primary" id="top">
+
+
+
+      <header class="navbar navbar--inverse navbar-static-top  tw-new-public-navigation" data-tracking-id="public-navigation">
          <div class="container">
             <div class="tw-public-navigation-menu__header pull-md-left">
                <button class="tw-public-navigation-menu__menu-toggle visible-xs visible-sm  collapsed" aria-controls="navbar" aria-expanded="false" type="button">
                   <div><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
                </button>
-               <div class="pull-xs-left tw-public-navigation__logo "><a href="/" class="logo-text logo-text-inverse visible-xs-block visible-sm-block"><span class="sr-only">Seawater Pro</span></a><a href="/" class="navbar-brand hidden-xs hidden-sm hidden-md m-b-1">Seawater Pro</a><a href="/" class="fast-flag flag-info visible-md-block"><span class="sr-only">Seawater Pro</span></a></div>
+               <div class="pull-xs-left tw-public-navigation__logo "><img style="width:200px;" src="http://secureservercdn.net/198.71.233.138/u0n.c0f.myftpupload.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-02-at-1.34.05-PM.png"/></a></div>
                <div class="pull-right visible-xs visible-sm tw-public-navigation-menu__buttons">
-                  <li class="navbar-btn m-b-1"><a href="/login" class="btn btn-default">Log in</a></li>
+                  <li class="navbar-btn m-b-1"><a href="/" class="btn btn-default">Shop</a></li>
                </div>
             </div>
+
             <nav id="navbar" class="tw-public-navigation-menu navbar-collapse navbar-collapse-with-panel collapse">
                <div class="tw-public-navigation-menu__sidebar navbar-collapse-panel">
                   <div class="tw-public-navigation-menu__header pull-md-left">
-                     <button class="tw-public-navigation-menu__menu-toggle visible-xs visible-sm  collapsed" aria-controls="navbar" aria-expanded="false" type="button">×</button>
-                     <div class="pull-xs-left tw-public-navigation__logo hidden-md hidden-lg hidden-xl"><a href="/" class="logo-text logo-text-inverse visible-xs-block visible-sm-block"><span class="sr-only">Seawater Pro</span></a><a href="/" class="navbar-brand hidden-xs hidden-sm hidden-md m-b-1">Seawater Pro</a><a href="/" class="fast-flag flag-info visible-md-block"><span class="sr-only">TransferWise</span></a></div>
+                     <button class="tw-public-navigation-menu__menu-toggle visible-xs visible-sm  collapsed click-for-nav" aria-controls="navbar" aria-expanded="false" type="button">×</button>
+                     <div class="pull-xs-left tw-public-navigation__logo hidden-md hidden-lg hidden-xl"><a href="/"><img style="width:200px;" src="http://secureservercdn.net/198.71.233.138/u0n.c0f.myftpupload.com/wp-content/uploads/2019/10/Screen-Shot-2019-10-02-at-1.34.05-PM.png"/></a></div>
                   </div>
                   <ul class="nav navbar-nav navbar-right">
                      <li class="" tabindex="-1"><a href="/" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">Home</span></a></li>
                      <li class="" tabindex="-1"><a href="/about-us" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">About us</span></a></li>
                      <li class="dropdown" tabindex="-1" data-analytics-id="receive">
-                        <a href="/us/borderless" class="visible-xs visible-sm link-callout"><span class="badge badge-success hidden-xs hidden-sm m-r-1">Order</span><span class="tw-public-navigation-item-content__text text-ellipsis">Online Shop<span class="badge badge-success visible-xs-inline-block visible-sm-inline-block m-l-1">Order</span></span><span class="caret visible-xl-inline-block"></span></a><button class="dropdown-toggle hidden-xs hidden-sm" type="button"><span class="badge badge-success hidden-xs hidden-sm m-r-1">Order</span><span class="tw-public-navigation-item-content__text text-ellipsis">Online Shop<span class="badge badge-success visible-xs-inline-block visible-sm-inline-block m-l-1">Order</span></span><span class="caret visible-xl-inline-block"></span></button>
+                        <a href="/" class="visible-xs visible-sm link-callout"><span class="badge badge-success hidden-xs hidden-sm m-r-1">Order</span><span class="tw-public-navigation-item-content__text text-ellipsis">Online Shop<span class="badge badge-success visible-xs-inline-block visible-sm-inline-block m-l-1">Order</span></span><span class="caret visible-xl-inline-block"></span></a><button class="dropdown-toggle hidden-xs hidden-sm" type="button"><span class="badge badge-success hidden-xs hidden-sm m-r-1">Order</span><span class="tw-public-navigation-item-content__text text-ellipsis">Online Shop<span class="badge badge-success visible-xs-inline-block visible-sm-inline-block m-l-1">Order</span></span><span class="caret visible-xl-inline-block"></span></button>
                         <ul class="dropdown-menu tw-public-navigation-menu__dropdown-menu p-a-0 hidden-xs hidden-sm">
                            <li class="dropdown-cta">
-                              <a href="/us/borderless" class="callout-container dropdown-content">
+                              <a href="/" class="callout-container dropdown-content">
                                  <img class="m-b-1" style="width:200px;height:auto;" src="https://img1.wsimg.com/isteam/ip/6c194743-6d01-403c-84cd-01575debe6fd/32e2ce2d-fd55-4320-a722-25c370703f28.JPG" alt=""><strong class="link-callout ">SeaWater Pro from $1695</strong>
                                  <p class="m-t-1 m-b-0">SeaWaterPro Residential Desalinator Watermaker, plug and play, fully assembled units. Available at 115 / 230 VAC dual voltage single phase or 3 phase.</p>
                               </a>
                            </li>
-                           <li class=""><a href="/us/borderless/pricing" class="callout-container dropdown-content"><strong class="link-callout ">Shop Now</strong></a></li>
+                           <li class=""><a href="/" class="callout-container dropdown-content"><strong class="link-callout ">Shop Now</strong></a></li>
                         </ul>
                      </li>
-                     <li class="" tabindex="-1"><a href="/help" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">Consumables</span></a></li>
-                     <li class="" tabindex="-1"><a href="/help" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">FAQ</span></a></li>
-                     <li class="" tabindex="-1"><a href="/help" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">Contact Us</span></a></li>
+                     <li class="" tabindex="-1"><a href="/" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">Consumables</span></a></li>
+                     <li class="" tabindex="-1"><a href="/faq" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">FAQ</span></a></li>
+                     <li class="" tabindex="-1"><a href="/contact-us" class="link-callout"><span class="tw-public-navigation-item-content__text text-ellipsis">Contact Us</span></a></li>
                   </ul>
                </div>
+
             </nav>
          </div>
       </header>
+
+
+
+
+
+
 
 <div class="bg-default" style="padding-top:3.5em;">
    <div class="container center-block p-t-section-1 p-b-section-2">
@@ -230,5 +257,16 @@
             </div>
          </div>
       </footer>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("button.tw-public-navigation-menu__menu-toggle.visible-xs.visible-sm.collapsed").on('click', function () {
+        $("#navbar").addClass('in');
+    });
+    $("button.tw-public-navigation-menu__menu-toggle.visible-xs.visible-sm.collapsed.click-for-nav").on('click', function () {
+        $("#navbar").removeClass('in');
+    });
+});
+</script>
    </body>
 </html>

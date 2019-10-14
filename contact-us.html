@@ -71,6 +71,22 @@ main.jumbotron.bg-primary.tw-new-hero {
 h1.tw-title-transition__title.text-inverse.text-xs-center.text-lg-left.m-b-1.m-t-4.tw-title-transition__title--english {
     color: #000 !important;
 }
+
+.tw-new-public-navigation.navbar--inverse .navbar-nav>li>a, .tw-new-public-navigation.navbar--inverse .navbar-nav>li>button.dropdown-toggle {
+   color:#fff;
+}
+.tw-new-public-navigation .tw-public-navigation-menu__sidebar.navbar-collapse-panel {
+   background-color: #ffffff;
+}
+.tw-new-public-navigation .tw-public-navigation-menu__menu-toggle {
+   color: #284c9a;
+}
+@media all and (max-width:767px) {
+   .tw-new-public-navigation .tw-public-navigation-menu.navbar-collapse .tw-public-navigation-menu__header,
+   .tw-new-public-navigation .tw-public-navigation-menu.navbar-collapse .navbar-nav>li {
+      border-bottom: 1px solid #efefef;
+   }
+}
       </style>
    </head>
    <body>
@@ -178,5 +194,16 @@ h1.tw-title-transition__title.text-inverse.text-xs-center.text-lg-left.m-b-1.m-t
             </div>
          </div>
       </footer>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    $("button.tw-public-navigation-menu__menu-toggle.visible-xs.visible-sm.collapsed").on('click', function () {
+        $("#navbar").addClass('in');
+    });
+    $("button.tw-public-navigation-menu__menu-toggle.visible-xs.visible-sm.collapsed.click-for-nav").on('click', function () {
+        $("#navbar").removeClass('in');
+    });
+});
+</script>
    </body>
 </html>
